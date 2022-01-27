@@ -19,6 +19,7 @@ body
 	min-height: 1000px;
 	font-family: montserrat, sans-serif;
 	transition-duration: 9s ease;
+	padding: 50px 0;
 }
 .container
 {
@@ -36,6 +37,7 @@ body
 	position: relative;
 	padding: 40px;
 	background: #2F4F4F;
+	min-width: 300px;
 }
 .profile{
 	position: relative;
@@ -176,11 +178,12 @@ body
 	position: relative;
 	padding: 40px;
 	background: white;
+
 	
 }
-.about{
+.container .about{
 	margin-bottom: 50px;
-	min-width: 250px;
+	min-width: 80px;
 }
 .about:last-child{
 	margin-bottom: 0;

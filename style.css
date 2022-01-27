@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,300&display=swap');
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+
+body
+{
+	background: url("images/walpaper.jpg") no-repeat center;
+	background-attachment: fixed;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 1000px;
+	font-family: montserrat, sans-serif;
+	transition-duration: 9s ease;
+}
+.container
+{
+	position: relative;
+	width: 100%;	
+	max-width: 1000px;
+	min-height: 1000px;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	box-shadow: 0 25px 50px rgba(0,0,0,0.50); /*Texture of shadow and color*/
+	margin: 20px;
+}
+
+.container .left-side{
+	position: relative;
+	padding: 40px;
+	background: #2F4F4F;
+}
+.profile{
+	position: relative;
+	display: flex;
+	flex-direction: column; /**//*tell of arrngement of div.*/
+	align-items: center;
+	padding-bottom: 20px;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+
+}
+.profile .avatar{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.profile .avatar img{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 100%;
+	object-fit: cover;
+}
+.profile h2{
+	font-size: 1.4em;
+	margin-top: 20px;
+	font-weight: 600;
+	line-height: 1.3em;
+	color: white;
+}
+.profile h2 span{
+	font-size: 0.8em;
+	font-weight: 300;
+	padding-left: 20px;
+}
+
+.contact{
+	padding-top: 40px;
+}
+.title{
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 600;
+	margin-bottom: 20px;
+	color: white;
+
+}
+.contact ul{
+	position: relative;
+}
+.contact ul.d1 li{
+	list-style: none;
+	position: relative;
+	margin: 10px 0;
+	cursor: pointer;
+	display: grid;
+	grid-template-columns: 1fr 8fr;
+}
+
+.contact ul li .icon{
+	display: inline-block;
+	width: 30px;
+	font-size: 18px;
+	color: lightskyblue;
+}
+.contact ul li {
+	display: grid;
+
+}
+.contact ul li .text.facebook a:hover{
+	color: skyblue;
+	font-weight: 100;
+}
+.contact ul li .text.facebook a{
+	text-decoration: none;
+	color: white;
+}
+.contact ul li span{
+	color: white;
+	
+}
+.contact.education ul li{
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+}
+.contact.education h5{
+	font-weight: 500;
+	color: lightskyblue;
+	margin-bottom: 5px;
+}
+
+.contact.education h4{
+	color: white;
+	font-weight: 500;
+}
+.contact.education h4 a{
+	color: white;
+}
+.contact.education h4 a:hover{
+	color: deepskyblue;
+	border-bottom: 1px solid;
+}
+.course{
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.contact.lang .percent{
+	position: relative;
+	width: 100%;
+	height: 7px;
+	background: black;
+	display: block;
+	margin-top: 5px;
+
+}
+.contact.lang .percent div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: lightskyblue;
+	height: 100%;
+	transition: ease 4s, width 1s, 1s background ease-in, 500ms transform ease-out 1s;
+}
+
+/*
+.contact.lang .percent div:hover{
+	width: 90%;
+	background: tomato;
+}*/
+
+.contact.lang li{
+
+}
+
+.container .right-side{
+	position: relative;
+	padding: 40px;
+	background: white;
+	
+}
+.about{
+	margin-bottom: 50px;
+	min-width: 250px;
+}
+.about:last-child{
+	margin-bottom: 0;
+}
+.break{
+	margin-top: 50px;
+}
+.about .skill{
+
+}
+.about .skill ul{
+	display: inline-table;
+	list-style: none;
+	margin-top: 10px;
+}
+.about .skill li{
+	margin: 10px 30px 0 0;
+	width: 	200px;
+}
+.about .skill li .text{
+	padding-left: 10px;
+}
+.about .skill li .percent1{
+	display: flex;
+	width: 100%;
+	height: 7px;
+	background: black;
+	display: block;
+	margin-top: 5px;
+
+}
+.about .skill li i{
+	color: black; 
+	opacity: 0.8; 
+	font-size: 25px;
+}
+ li .ps{
+ 	position: absolute;
+ 	width: 23px;
+	background: black;
+	color: white;
+	opacity: 0.8;
+	padding: 2px;
+}
+.about .skill span .perc-2{
+	background: tomato;
+	height: 100%;
+}
